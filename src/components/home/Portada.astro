@@ -1,0 +1,78 @@
+<div x-data="{ showModal: false, formSubmitted: false }" class="relative overflow-hidden dark:bg-gray-900">
+  <div class="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
+    <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+      <div class="sm:max-w-lg">
+        <h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
+          Descarga la ficha técnica
+        </h1>
+        <p class="mt-4 text-xl text-gray-500 dark:text-gray-300">
+          This year, our new summer collection will shelter you from the harsh elements of a world that doesn't care if you live or die.
+        </p>
+      </div>
+      <div>
+        <div class="mt-10">
+          <!-- Decorative image grid -->
+          <div aria-hidden="true" class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
+            <div class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+              <div class="flex items-center space-x-6 lg:space-x-8">
+                <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                  <div class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                    <img src="/assets/product.webp" alt="" class="h-full w-full object-cover object-center">
+                  </div>
+                  <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <img src="/assets/prod.webp" alt="" class="h-full w-full object-cover object-center">
+                  </div>
+                </div>
+                <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                  <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <img src="/assets/products.webp" alt="" class="h-full w-full object-cover object-center">
+                  </div>
+                  <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <img src="/assets/Estilo.webp" alt="" class="h-full w-full object-cover object-center">
+                  </div>
+                  <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <img src="/assets/despues.webp" alt="" class="h-full w-full object-cover object-center">
+                  </div>
+                </div>
+                <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                  <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg" alt="" class="h-full w-full object-cover object-center">
+                  </div>
+                  <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg" alt="" class="h-full w-full object-cover object-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a @click="showModal = true" class="inline-flex items-center justify-center rounded-full border border-transparent bg-primary-600 px-5 py-3 text-base font-medium text-white transition hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:bg-primary-400 dark:text-primary-950 dark:hover:bg-primary-300 dark:focus-visible:outline-primary-400">
+            Ficha técnica
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div x-show="showModal" @click.away="showModal = false" class="fixed inset-0 z-50 flex items-center justify-center">
+    <div class="relative w-96 rounded-lg bg-white dark:bg-gray-700 p-8">
+      <!-- Botón de cierre -->
+      <button @click="showModal = false" class="absolute right-0 top-0 m-4 text-gray-900 hover:text-gray-400 dark:text-gray-900 focus:outline-none">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+      <!-- Título y contenido del modal -->
+      <h2 class="mb-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-900">
+        Ingresa tus datos
+      </h2>
+      <form action="https://formsubmit.co/maycolcastroesp19@gmail.com" method="POST" class="flex flex-col space-y-4">
+        <input type="text" name="name" required placeholder="Nombre" class="border-gray-600 dark:border-gray-500 rounded-md border px-4 py-2 focus:outline-none focus:ring focus:ring-primary-400">
+        <input type="email" name="email" required placeholder="Correo electrónico" class="border-gray-600 dark:border-gray-500 rounded-md border px-4 py-2 focus:outline-none focus:ring focus:ring-primary-400">
+        <button type="submit" class="rounded-md bg-primary-600 py-2 font-medium text-white transition duration-300 ease-in-out hover:bg-primary-700 focus:outline-none focus:ring focus:ring-primary-400">
+          Enviar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

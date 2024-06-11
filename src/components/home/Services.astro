@@ -1,0 +1,51 @@
+---
+const services = [
+  {
+    step: '01',
+    name: 'Cabello Seco y Opaco',
+    description:
+      'Incluso después de probar múltiples productos, sus clientes siguen luchando con el persistente problema del cabello seco y sin brillo. Esta línea de productos brinda hidratación profunda, ofrece una solución que van más allá de la superficie, revitalizando y restaurando la humedad de su cabello desde la raíz hasta las puntas.',
+  },
+  {
+    step: '02',
+    name: 'Frizz y Volumen Descontrolado',
+    description:
+      'El frizz y el volumen descontrolado son otro problema capilar frustrante que pueden afectar la confianza de sus clientes. Este producto ofrece tambien un control de frizz para domar incluso los cabellos más rebeldes, dejando mechones suaves, manejables y libres de frizz durante todo el día.',
+  },
+  {
+    step: '03',
+    name: 'Daños por Calor y Químicos',
+    description:
+      'Los daños causados por el calor y los productos químicos son una preocupación constante para sus clientes que buscan mantener la salud y la vitalidad de su cabello. Con nuestra gama de productos reparadores y protectores, ofrecemos una solución integral para restaurar y fortalecer el cabello, protegiéndolo contra futuros daños causados por el calor y los tratamientos químicos.',
+  },
+];
+
+
+
+---
+
+<section class="py-4 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="flex flex-col gap-2 sm:gap-4">
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Problemas capilares más frecuentes</h2>
+       <p class="text-primary-950/70 dark:text-primary-200/70 text-md sm:text-md text-left lg:text-left mb-4">
+            Si tus clientes enfrentan alguno de los siguientes problemas, nuestro producto está diseñado para ofrecer soluciones efectivas y duraderas.
+          </p>
+      <div class="grid gap-8 lg:grid-cols-3">
+        {
+          services.map((service) => (
+            <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+              <p class="text-sm">{service.step}</p>
+              <div class="flex flex-col gap-4">
+                <h3 class="text-xl font-medium">{service.name}</h3>
+                <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                  {service.description}
+                </p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
