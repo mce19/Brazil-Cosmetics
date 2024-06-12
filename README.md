@@ -1,12 +1,10 @@
-# Stone: Astro Theme
+# brazil-cosmetics: Astro Theme
 
-Stone is a free and open-source Astro theme specially designed for Business, Marketing, SaaS and Startup websites.
+brazil-cosmetics
 
 ## Key Features:
 
 - **Built with Tailwind CSS & Alpine.js**
-- **5+ Pages**
-- **15+ Sections**
 - Clean & Modern Design
 - Fully Responsive
 - Dark & Light Mode

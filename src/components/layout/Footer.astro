@@ -1,7 +1,7 @@
 ---
 const bottomLinks = [
   {
-    header: 'Social',
+    header: 'Redes Social',
     links: [
       {
         name: 'Instagram',
@@ -12,31 +12,6 @@ const bottomLinks = [
         name: 'Facebook',
         href: 'https://facebook.com/',
         isExternal: true,
-      },
-    ],
-  },
-  {
-    header: 'Company',
-    links: [
-      {
-        name: 'Home',
-        href: '/',
-        isExternal: false,
-      },
-      {
-        name: 'About',
-        href: '/about',
-        isExternal: false,
-      },
-      {
-        name: 'Pricing',
-        href: '/pricing',
-        isExternal: false,
-      },
-      {
-        name: 'Contact',
-        href: '/contact',
-        isExternal: false,
       },
     ],
   },
@@ -71,18 +46,22 @@ const bottomLinks = [
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col justify-between gap-12 sm:gap-16 lg:flex-row">
       <div class="flex max-w-sm flex-col items-start gap-6 sm:gap-8">
+      <a
+        href="/"
+        class="focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 rounded-md focus-visible:outline focus-visible:outline-2"
+      >
         <img
-          class="h-8 w-auto"
-          width="65"
-          height="40"
-          :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/logo.svg'"
+          class="h-8 w-auto rounded-full border-5"
+          width="75"
+          height="60"
+          :src="$store.theme.isDark ? '/assets/logoV.webp' : '/assets/logoV.webp'"
           alt="Stone"
         />
+        </a>
         <p class="text-primary-950/70 dark:text-primary-200/70 text-base">
-          Stone is a premium Astro theme specially designed for Business, Marketing, SaaS and
-          Startup websites.
+          Ofrecemos productos orgánicos de alto rendileftmiento y sin formaldehído.
         </p>
-        <p class="text-primary-950/70 dark:text-primary-200/70 text-sm">© 2023 Stone</p>
+        <p class="text-primary-950/70 dark:text-primary-200/70 text-sm">© 2024 Brazil Cosmetics</p>
       </div>
 
       <!-- Bottom links -->
